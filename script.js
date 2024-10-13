@@ -24,4 +24,23 @@ let pet = {
         this.hunger += 10;
       }
     };
-      
+
+    
+    let action = prompt("What do you want to do? (feed, play, age)");
+
+    switch (action) {
+      case "feed":
+        pet.feed();
+        alert("You fed " + pet.name + ". Hunger is now " + pet.hunger);
+        break;
+      case "play":
+        pet.play();
+        alert("You played with " + pet.name + ". Happiness is now " + pet.happiness);
+        break;
+      case "age":
+        pet.agePet();
+        alert("Your pet " + pet.name + " is now " + pet.age + " years old.");
+        break;
+      default:
+        alert("Invalid action.");
+    }
