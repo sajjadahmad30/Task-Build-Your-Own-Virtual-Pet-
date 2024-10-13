@@ -18,6 +18,10 @@ let pet = {
           this.happiness = 100;
         }
       },
-    
-     
-  }
+      agePet: function() {
+        this.age += 1;
+        this.happiness -= 5;
+        this.hunger += 10;
+      }
+    };
+      
