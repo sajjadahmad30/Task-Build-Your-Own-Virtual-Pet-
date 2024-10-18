@@ -9,15 +9,19 @@ let pet = {
     // Method to feed the pet
     feed: function() {
         this.hunger -= 20;
-        if (this.hunger < 0) this.hunger = 0;
-        alert(`${this.name} has been fed. Hunger is now: ${this.hunger}`);
+        if (this.hunger < 0){
+            this.hunger = 0;
+       alert(`${this.name} has been fed. Hunger is now: ${this.hunger}`); 
+        }
     },
     
     // Method to play with the pet
     play: function() {
         this.happiness += 20;
-        if (this.happiness > 100) this.happiness = 100;
-        alert(`${this.name} played and is happier! Happiness is now: ${this.happiness}`);
+        if (this.happiness > 100){
+            this.happiness = 100;
+             alert(`${this.name} played and is happier! Happiness is now: ${this.happiness}`);
+            }
     },
     
     // Method to age the pet
